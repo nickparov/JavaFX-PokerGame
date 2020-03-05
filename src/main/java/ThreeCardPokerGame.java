@@ -14,6 +14,8 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import UI.Constants;
+
 public class ThreeCardPokerGame extends Application {
 
   private Player _playerOne;
@@ -32,24 +34,10 @@ public class ThreeCardPokerGame extends Application {
         // TODO Auto-generated method stub
 
         primaryStage.setTitle("Let's Play Three Card Poker!!!");
-        primaryStage.setMinWidth(600);
-        primaryStage.setMinHeight(600);
-
-        StackPane layers = new StackPane();
-
-        Rectangle helpIcon = new Rectangle(600, 400);
-        helpIcon.setFill(Color.BLACK);
-
-        Text helpText = new Text("?");
-        helpText.setFont(Font.font("Verdana", FontWeight.BOLD, 18));
-        helpText.setFill(Color.WHITE);
-
-        layers.getChildren().addAll(helpIcon, helpText);
+        primaryStage.setResizable(false);
 
         LayoutManager layoutManager = new LayoutManager();
-
-
-        Scene scene = new Scene(layoutManager.getLayout(), 600, 600);
+        Scene scene = new Scene(layoutManager.getLayout(), Constants.SCENE_MIN_WIDTH, Constants.SCENE_MIN_HEIGHT);
 
         primaryStage.setScene(scene);
         primaryStage.show();

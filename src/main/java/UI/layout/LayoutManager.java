@@ -13,14 +13,17 @@ public class LayoutManager implements LayoutInterface {
     @Override
     public StackPane getLayout() {
         StackPane finalLayout = new StackPane();
-        finalLayout.getChildren().addAll(m_backgroundLayout.getLayout());
+        finalLayout.getChildren().addAll(m_intermediateLayout.getLayout());
         return finalLayout;
     }
 
 
-    private void initializeLayouts() {
+    private void initializeLayouts()
+    {
+        m_intermediateLayout = new IntermediateLayout();
         m_backgroundLayout = new BackgroundLayout();
     }
 
+    private IntermediateLayout m_intermediateLayout;
     private BackgroundLayout m_backgroundLayout;
 }
