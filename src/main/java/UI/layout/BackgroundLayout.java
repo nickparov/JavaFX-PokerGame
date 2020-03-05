@@ -1,4 +1,4 @@
-package layout;
+package UI.layout;
 
 import javafx.geometry.Pos;
 import javafx.scene.layout.Pane;

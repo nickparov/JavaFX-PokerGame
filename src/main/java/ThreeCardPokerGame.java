@@ -1,6 +1,7 @@
 import Core.Game.Dealer;
 import Core.Game.Player;
 
+import UI.layout.LayoutManager;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -45,7 +46,7 @@ public class ThreeCardPokerGame extends Application {
 
         layers.getChildren().addAll(helpIcon, helpText);
 
-        layout.LayoutManager layoutManager = new layout.LayoutManager();
+        LayoutManager layoutManager = new LayoutManager();
 
 
         Scene scene = new Scene(layoutManager.getLayout(), 600, 600);

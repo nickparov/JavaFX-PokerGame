@@ -1,4 +1,4 @@
-package layout;
+package UI.layout;
 
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
