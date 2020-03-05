@@ -1,10 +1,17 @@
 import Core.Game.Dealer;
 import Core.Game.Player;
 
+import UI.gui.*;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -22,24 +29,32 @@ public class ThreeCardPokerGame extends Application {
 		launch(args);
 	}
 
-  public void test(Stage passedStage) throws Exception {
-    // TODO Auto-generated method stub
-    passedStage.setTitle("Let's Play Three Card Poker!!!");
-    // btn 
-    Text textField = new Text("Waiting");
-    Button btn = new Button("Play Poker!");
+    public void test(Stage primaryStage) throws Exception {
+        // TODO Auto-generated method stub
 
-    btn.setOnAction(actionEvent -> {
-      textField.setText("This is a text sample");
-      btn.setText("Btn Clicked!");
-    });
+        primaryStage.setTitle("Let's Play Three Card Poker!!!");
+        primaryStage.setMinWidth(gui.GuiConstants.STAGE_MIN_WIDTH);
+        primaryStage.setMinHeight(gui.GuiConstants.STAGE_MIN_HEIGHT);
 
-    HBox hb = new HBox(btn, textField);
-    
-		Scene scene = new Scene(hb,600,600);
-		passedStage.setScene(scene);
-		passedStage.show();
-  }
+        StackPane layers = new StackPane();
+
+        Rectangle helpIcon = new Rectangle(600, 400);
+        helpIcon.setFill(Color.BLACK);
+
+        Text helpText = new Text("?");
+        helpText.setFont(Font.font("Verdana", FontWeight.BOLD, 18));
+        helpText.setFill(Color.WHITE);
+
+        layers.getChildren().addAll(helpIcon, helpText);
+
+        layout.LayoutManager layoutManager = new layout.LayoutManager();
+
+
+        Scene scene = new Scene(layoutManager.getLayout(), 600, 600);
+
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
 
 	//feel free to remove the starter code from this method
 	@Override

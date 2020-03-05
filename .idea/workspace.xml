@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3a4aaed7-0f04-494c-91cb-04d07cd18f90" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ThreeCardPokerProject2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Events.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ThreeCardPokerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ThreeCardPokerGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Core/Game/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Core/Game/Dealer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Core/Game/Deck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Core/Game/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Core/ThreeCardLogic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ThreeCardPokerGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ThreeCardPokerGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ThreeCardTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YgnFJ2xhHKUJTdxmQDhydBhGp3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ThreeCardPokerGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreeCardPokerGame" />
+      <module name="ThreeCardPokerProject2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ThreeCardPokerGame" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a4aaed7-0f04-494c-91cb-04d07cd18f90" name="Default Changelist" comment="" />
+      <created>1583372999364</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583372999364</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="444" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583373253993">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="444" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1583373253993" />
+    <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1583373281109">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="775" y="303" key="chooseDestDirectoryDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1583373281109" />
+  </component>
+</project>
