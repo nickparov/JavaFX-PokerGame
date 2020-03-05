@@ -1,8 +1,6 @@
 import Core.Game.Dealer;
 import Core.Game.Player;
 
-import UI.gui.*;
-
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -33,8 +31,8 @@ public class ThreeCardPokerGame extends Application {
         // TODO Auto-generated method stub
 
         primaryStage.setTitle("Let's Play Three Card Poker!!!");
-        primaryStage.setMinWidth(gui.GuiConstants.STAGE_MIN_WIDTH);
-        primaryStage.setMinHeight(gui.GuiConstants.STAGE_MIN_HEIGHT);
+        primaryStage.setMinWidth(600);
+        primaryStage.setMinHeight(600);
 
         StackPane layers = new StackPane();
 
