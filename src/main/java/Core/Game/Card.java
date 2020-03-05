@@ -6,7 +6,7 @@ public class Card {
 
   Card(char s, int v) {
     _suit = s; //  ‘C’, ‘D’, ’S’, ‘H’
-    _value = v; // 2- 14
+    _value = v; // 2 - 14
   };
 
   public char GetSuit() {

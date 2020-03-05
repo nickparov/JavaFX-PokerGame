@@ -55,36 +55,32 @@ public class ThreeCardPokerGame extends Application {
     _isPlayerTwoPlaying = false;
 
     // GameLoop
-    while(!_gameOver) {
+    // while(!_gameOver) {
       // Before each game starts, the Dealer class must check to see if threre are at least 34 cards in the deck
-      _theDealer.CheckDeck();
+      // _theDealer.CheckDeck();
       // TODO 
         // 1: Listen for Bet Input of Player1 and Player2 
         // 2: Listen for their choice: PLAY or FOLD
-
       // ----------------------------------------------- SIMULATING GAME [ START ]----------------------------------------------- //
         // Simulate betting
-          _playerOne.SetAnteBet(5);
-          _playerOne.SetAnteBet(5);
+          // _playerOne.SetAnteBet(5);
+          // _playerOne.SetAnteBet(5);
         // Depending on bets players put, deal cards to them
-          _playerOne.SetHand(_theDealer.DealHand());
-          _playerTwo.SetHand(_theDealer.DealHand());
-          _theDealer.SetHand(_theDealer.DealHand());
+          // _playerOne.SetHand(_theDealer.DealHand());
+          // _playerTwo.SetHand(_theDealer.DealHand());
+          // _theDealer.SetHand(_theDealer.DealHand());
         // wait for choice ( PLAY / FOLD )
           // if (!_isPlayer<One/Two>Playing) ? PLAYER_FOLDED_ACTION_FIRED : PLAYER_ACCEPTED_ACTION_FIRED
         
         // Simulate Choice
-          _isPlayerOnePlaying = true;  
-          _isPlayerTwoPlaying = true;
+          // _isPlayerOnePlaying = true;  
+          // _isPlayerTwoPlaying = true;
         // Evaluate Hands 
         // ...
         // continue...
         // ...
       // ----------------------------------------------- SIMULATING GAME [ END ]----------------------------------------------- //
-      
-
-
-    }
+    // }
 
       
 

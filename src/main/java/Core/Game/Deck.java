@@ -9,11 +9,12 @@ public class Deck extends ArrayList<Card> {
   private ArrayList<Card> _CardDeck;
 
   Deck() {
+    _CardDeck = new ArrayList<Card>();
     newDeck();
   }
 
   public void newDeck() {
-    _CardDeck.clear();
+    _CardDeck.clear(); 
     // create a new deck of 52 cards
     for (Character s : _Suits) {
       for(int i = 2; i <= 14; i++) {
