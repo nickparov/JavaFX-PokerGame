@@ -2,20 +2,16 @@ package UI.myControllers.buttons;
 
 import UI.myControllers.Events;
 import UI.myControllers.MyControllersInterface;
-
 import UI.myControllers.Publisher;
-import javafx.scene.control.Button;
-
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.control.Button;
 
-
-
-public class FoldButton extends Button implements MyControllersInterface
+public class NewRoundButton extends Button implements MyControllersInterface
 {
-    public FoldButton()
+    public NewRoundButton()
     {
-        setText("FOLD");
+        setText("ROUND");
         attachEventListeners();
     }
 
@@ -31,7 +27,7 @@ public class FoldButton extends Button implements MyControllersInterface
         setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                m_publisher.notifyControllers(Events.FOLD_BUTTON_1_CLICKED);
+                //m_publisher.notifyControllers(Events.FOLD_BUTTON_1_CLICKED);
             }
         });
     }
@@ -41,6 +37,7 @@ public class FoldButton extends Button implements MyControllersInterface
     {
         m_publisher = publisher;
     }
+
 
     private Publisher m_publisher;
 }

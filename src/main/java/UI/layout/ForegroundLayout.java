@@ -1,4 +1,6 @@
 package UI.layout;
 
-public class ForegroundLayout {
+public class ForegroundLayout
+{
+
 }
