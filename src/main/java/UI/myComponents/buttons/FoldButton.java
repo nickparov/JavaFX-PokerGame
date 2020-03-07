@@ -1,17 +1,21 @@
-package UI.myControllers.buttons;
+package UI.myComponents.buttons;
 
-import UI.myControllers.Events;
-import UI.myControllers.MyControllersInterface;
-import UI.myControllers.Publisher;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import UI.myComponents.Events;
+import UI.myComponents.MyComponentsInterface;
+
+import UI.myComponents.Publisher;
 import javafx.scene.control.Button;
 
-public class PlayButton extends Button implements MyControllersInterface
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+
+
+
+public class FoldButton extends Button implements MyComponentsInterface
 {
-    public PlayButton()
+    public FoldButton()
     {
-        setText("PLAY");
+        setText("FOLD");
         attachEventListeners();
     }
 
@@ -27,7 +31,7 @@ public class PlayButton extends Button implements MyControllersInterface
         setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                //m_publisher.notifyControllers(Events.FOLD_BUTTON_1_CLICKED);
+                m_publisher.notifyControllers(Events.FOLD_BUTTON_1_CLICKED);
             }
         });
     }

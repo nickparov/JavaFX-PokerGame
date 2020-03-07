@@ -1,6 +1,6 @@
-package UI.myControllers.card;
+package UI.myComponents.card;
 
-import UI.util.Singleton;
+import util.Singleton;
 
 class CardDatabase implements Singleton
 {

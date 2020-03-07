@@ -1,33 +1,33 @@
-package UI.myControllers;
+package UI.myComponents;
 
 import java.util.ArrayList;
 
 public class Publisher
 {
-    public void addController(MyControllersInterface subscriber)
+    public void addComponent(MyComponentsInterface subscriber)
     {
         m_myControllers.add(subscriber);
         subscriber.setPublisher(this);
     }
 
-    public void addControllers(MyControllersInterface ...subscribers)
+    public void addComponents(MyComponentsInterface ...subscribers)
     {
-        for(MyControllersInterface subscriber : subscribers)
+        for(MyComponentsInterface subscriber : subscribers)
         {
             m_myControllers.add(subscriber);
             subscriber.setPublisher(this);
         }
     }
 
-    public void removeController(MyControllersInterface subscriber)
+    public void removeComponent(MyComponentsInterface subscriber)
     {
         m_myControllers.remove(subscriber);
         subscriber.setPublisher(null);
     }
 
-    public void removeControllers(MyControllersInterface ...subscribers)
+    public void removeComponents(MyComponentsInterface ...subscribers)
     {
-        for(MyControllersInterface subscriber : subscribers)
+        for(MyComponentsInterface subscriber : subscribers)
         {
             m_myControllers.remove(subscriber);
             subscriber.setPublisher(null);
@@ -38,9 +38,9 @@ public class Publisher
 
     public void notifyControllers(Events event)
     {
-        for(MyControllersInterface myController : m_myControllers)
+        for(MyComponentsInterface myController : m_myControllers)
             myController.update(event);
     }
 
-    private ArrayList<MyControllersInterface> m_myControllers = new ArrayList<>();
+    private ArrayList<MyComponentsInterface> m_myControllers = new ArrayList<>();
 }

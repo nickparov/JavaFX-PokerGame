@@ -1,4 +1,4 @@
-package UI.myControllers;
+package UI.myComponents;
 
 public enum Events {
     FOLD_BUTTON_1_CLICKED,

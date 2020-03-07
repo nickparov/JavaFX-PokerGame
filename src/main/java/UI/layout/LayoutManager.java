@@ -1,29 +1,38 @@
 package UI.layout;
 
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
+import UI.Constants;
+
+import UI.myComponents.MyComponentsManager;
+import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 
-public class LayoutManager implements LayoutInterface {
-
-    public LayoutManager() {
-        initializeLayouts();
-    }
-
-    @Override
-    public StackPane getLayout() {
-        StackPane finalLayout = new StackPane();
-        finalLayout.getChildren().addAll(m_backgroundLayout.getLayout());//m_intermediateLayout.getLayout());
-        return finalLayout;
-    }
-
-
-    private void initializeLayouts()
+public class LayoutManager
+{
+    public LayoutManager(MyComponentsManager myComponentsManager)
     {
-        m_intermediateLayout = new IntermediateLayout();
-        m_backgroundLayout = new BackgroundLayout();
+        m_gameFieldLayout = new GameFieldLayout(myComponentsManager);
+
+        buildFinalLayout();
+        buildScene();
     }
 
-    private IntermediateLayout m_intermediateLayout;
-    private BackgroundLayout m_backgroundLayout;
+    public Scene getScene()
+    {
+        return m_scene;
+    }
+
+    private void buildScene()
+    {
+        m_scene = new Scene(m_finalLayout, Constants.SCENE_MIN_WIDTH, Constants.SCENE_MIN_HEIGHT);
+    }
+
+    private void buildFinalLayout()
+    {
+        m_finalLayout = new StackPane(m_gameFieldLayout.getLayout());
+    }
+
+    private Scene m_scene;
+    private StackPane m_finalLayout;
+
+    private GameFieldLayout m_gameFieldLayout;
 }

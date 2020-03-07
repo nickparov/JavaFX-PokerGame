@@ -1,6 +1,6 @@
-package UI.myControllers;
+package UI.myComponents;
 
-public interface MyControllersInterface
+public interface MyComponentsInterface
 {
     void update(Events event);
 

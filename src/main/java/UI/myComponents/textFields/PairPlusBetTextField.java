@@ -1,12 +1,17 @@
-package UI.myControllers.textFields;
+package UI.myComponents.textFields;
 
-import UI.myControllers.Events;
-import UI.myControllers.MyControllersInterface;
-import UI.myControllers.Publisher;
+import UI.myComponents.Events;
+import UI.myComponents.MyComponentsInterface;
+import UI.myComponents.Publisher;
 import javafx.scene.control.TextField;
 
-public class PairPlusBetTextField extends TextField implements MyControllersInterface
+public class PairPlusBetTextField extends TextField implements MyComponentsInterface
 {
+    public PairPlusBetTextField()
+    {
+        setPromptText("pair plus bet");
+    }
+
     @Override
     public void update(Events event)
     {

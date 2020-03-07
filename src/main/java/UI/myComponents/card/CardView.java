@@ -1,9 +1,9 @@
-package UI.myControllers.card;
+package UI.myComponents.card;
 
-import UI.myControllers.Events;
-import UI.myControllers.MyControllersInterface;
+import UI.myComponents.Events;
+import UI.myComponents.MyComponentsInterface;
 
-import UI.myControllers.Publisher;
+import UI.myComponents.Publisher;
 import javafx.animation.ScaleTransition;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -15,7 +15,7 @@ import javafx.util.Duration;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-public class CardView extends ImageView implements MyControllersInterface {
+public class CardView extends ImageView implements MyComponentsInterface {
     public CardView(Card card)
     {
         loadCardImage(card);

@@ -1,13 +1,18 @@
-package UI.myControllers.textFields;
+package UI.myComponents.textFields;
 
-import UI.myControllers.Events;
-import UI.myControllers.MyControllersInterface;
-import UI.myControllers.Publisher;
+import UI.myComponents.Events;
+import UI.myComponents.MyComponentsInterface;
+import UI.myComponents.Publisher;
 import javafx.beans.InvalidationListener;
 import javafx.scene.control.TextField;
 
-public class AnteBetTextField extends TextField implements MyControllersInterface
+public class AnteBetTextField extends TextField implements MyComponentsInterface
 {
+    public AnteBetTextField()
+    {
+        setPromptText("ante bet");
+    }
+
     @Override
     public void update(Events event)
     {

@@ -1,4 +1,4 @@
-package UI.util;
+package util;
 
 public interface Singleton {
 }

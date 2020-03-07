@@ -1,4 +1,4 @@
-package UI.myControllers.card;
+package UI.myComponents.card;
 
 public enum Values
 {

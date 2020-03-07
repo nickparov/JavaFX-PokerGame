@@ -1,13 +1,13 @@
-package UI.myControllers.buttons;
+package UI.myComponents.buttons;
 
-import UI.myControllers.Events;
-import UI.myControllers.MyControllersInterface;
-import UI.myControllers.Publisher;
+import UI.myComponents.Events;
+import UI.myComponents.MyComponentsInterface;
+import UI.myComponents.Publisher;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 
-public class NewRoundButton extends Button implements MyControllersInterface
+public class NewRoundButton extends Button implements MyComponentsInterface
 {
     public NewRoundButton()
     {

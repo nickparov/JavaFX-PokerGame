@@ -2,6 +2,7 @@ import Core.Game.Dealer;
 import Core.Game.Player;
 
 import UI.layout.LayoutManager;
+import game.SetUp;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -36,10 +37,9 @@ public class ThreeCardPokerGame extends Application {
         primaryStage.setTitle("Let's Play Three Card Poker!!!");
         primaryStage.setResizable(false);
 
-        LayoutManager layoutManager = new LayoutManager();
-        Scene scene = new Scene(layoutManager.getLayout(), Constants.SCENE_MIN_WIDTH, Constants.SCENE_MIN_HEIGHT);
+        SetUp setup = new SetUp();
 
-        primaryStage.setScene(scene);
+        primaryStage.setScene(setup.getScene());
         primaryStage.show();
     }
 
