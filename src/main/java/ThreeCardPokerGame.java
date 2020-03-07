@@ -1,5 +1,5 @@
 import Core.Game.Dealer;
-import Core.Game.Player;
+import Core.Game.Player.Player;
 
 import UI.layout.LayoutManager;
 import game.SetUp;
