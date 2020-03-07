@@ -1,5 +1,6 @@
 package Core.Game;
 
+import Core.Game.Card.Card;
 import java.util.ArrayList;
 
 public class Dealer {

@@ -1,6 +1,7 @@
 package Core.Game;
 
 import java.util.ArrayList;
+import Core.Game.Card.Card;
 
 /*
   It keeps track of each games current hand

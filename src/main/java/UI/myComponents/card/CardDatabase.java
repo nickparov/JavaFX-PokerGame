@@ -1,6 +1,10 @@
 package UI.myComponents.card;
 
 import util.Singleton;
+import Core.Game.Card.Card;
+import Core.Game.Card.Suits;
+import Core.Game.Card.Values;
+
 
 class CardDatabase implements Singleton
 {
@@ -14,7 +18,7 @@ class CardDatabase implements Singleton
 
     String getCardFileName(Card card)
     {
-        return m_dataBase[hashCard(card.value.ordinal(), card.suit.ordinal())];
+        return m_dataBase[hashCard(card.getValueIdx(), card.getSuitIdx())];
     }
 
     private int hashCard(int val, int suit)

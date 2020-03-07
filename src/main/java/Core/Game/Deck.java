@@ -1,5 +1,7 @@
 package Core.Game;
 
+import Core.Game.Card.Card;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

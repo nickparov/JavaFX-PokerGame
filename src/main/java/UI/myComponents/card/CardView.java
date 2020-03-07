@@ -1,5 +1,7 @@
 package UI.myComponents.card;
 
+import Core.Game.Card.Card;
+
 import UI.myComponents.Events;
 import UI.myComponents.MyComponentsInterface;
 

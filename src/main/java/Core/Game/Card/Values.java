@@ -1,4 +1,4 @@
-package UI.myComponents.card;
+package Core.Game.Card;
 
 public enum Values
 {

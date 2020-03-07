@@ -1,9 +1,11 @@
 package UI.myComponents;
 
+import Core.Game.Card.Card;
+
 import UI.myComponents.buttons.FoldButton;
 import UI.myComponents.buttons.NewRoundButton;
 import UI.myComponents.buttons.PlayButton;
-import UI.myComponents.card.Card;
+//import UI.myComponents.card.Card;
 import UI.myComponents.card.CardView;
 import UI.myComponents.textFields.AnteBetTextField;
 import UI.myComponents.textFields.PairPlusBetTextField;
@@ -19,13 +21,13 @@ public class MyComponentsManager
     private void initializeComponents()
     {
         for(int i = 0; i < m_cards_p1.length; i++)
-            m_cards_p1[i] = new CardView(new Card(13, 'C'));
+            m_cards_p1[i] = new CardView(new Card('C', 13));
 
         for(int i = 0; i < m_cards_p2.length; i++)
-            m_cards_p2[i] = new CardView(new Card(13, 'C'));
+            m_cards_p2[i] = new CardView(new Card('C', 13));
 
         for(int i = 0; i < m_cards_dealer.length; i++)
-            m_cards_dealer[i] = new CardView(new Card(13, 'C'));
+            m_cards_dealer[i] = new CardView(new Card('C', 13));
     }
 
     private void linkComponents()

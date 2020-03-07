@@ -4,14 +4,13 @@ import UI.myComponents.MyComponentsManager;
 import UI.myComponents.card.CardView;
 
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.geometry.Insets;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 
 
-public class GameFieldLayout implements LayoutInterface {
+public class GameFieldLayout implements LayoutInterface
+{
 
     public GameFieldLayout(MyComponentsManager myComponentsManager)
     {

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import Core.Game.Card;
+import Core.Game.Card.Card;
 
 public class ThreeCardLogic {
 
@@ -30,8 +30,8 @@ public class ThreeCardLogic {
     }
     // count cards of the same suit and corresponding values
     for(Card CurCard : Hand) {
-      SuitToCardsMap.put(CurCard.GetSuit(),  SuitToCardsMap.get(CurCard.GetSuit()) + 1);
-      ValToCardsArray.set(CurCard.GetValue(), ValToCardsArray.get(CurCard.GetValue()) + 1);
+      SuitToCardsMap.put(CurCard.getSuit(),  SuitToCardsMap.get(CurCard.getSuit()) + 1);
+      ValToCardsArray.set(CurCard.getValue(), ValToCardsArray.get(CurCard.getValue()) + 1);
     }
 
     System.out.println("Evaluated a Hand!");
