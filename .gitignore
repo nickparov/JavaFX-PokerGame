@@ -1,2 +1,15 @@
 target/
 .DS_Store
+target/test-classes/ThreeCardTest.class
+target/classes/UI/layout/LayoutManager.class
+target/classes/UI/layout/LayoutInterface.class
+target/classes/UI/layout/IntermediateLayout.class
+target/classes/UI/layout/ForegroundLayout.class
+target/classes/UI/layout/BackgroundLayout.class
+target/classes/ThreeCardPokerGame.class
+target/classes/Core/ThreeCardLogic.class
+target/classes/Core/Game/Player.class
+target/classes/Core/Game/Deck.class
+target/classes/Core/Game/Dealer.class
+target/classes/Core/Game/Card.class
+target/classes/.DS_Store
