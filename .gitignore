@@ -13,3 +13,14 @@ target/classes/Core/Game/Deck.class
 target/classes/Core/Game/Dealer.class
 target/classes/Core/Game/Card.class
 target/classes/.DS_Store
+target/classes/Core/Game/Dealer.class
+target/classes/ThreeCardPokerGame.class
+target/classes/UI/layout/LayoutInterface.class
+target/classes/UI/layout/LayoutManager.class
+target/classes/ThreeCardPokerGame.class
+target/classes/Core/ThreeCardLogic.class
+target/classes/Core/Game/Dealer.class
+target/classes/Core/Game/Deck.class
+target/classes/UI/layout/LayoutInterface.class
+target/classes/UI/layout/LayoutManager.class
+target/test-classes/ThreeCardTest.class
