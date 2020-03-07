@@ -14,6 +14,7 @@ public class Dealer {
   }
 
   public ArrayList<Card> DealHand() {
+    CheckDeck();
     ArrayList<Card> Hand = new ArrayList<Card>();
 
     // get 3 cards from the deck

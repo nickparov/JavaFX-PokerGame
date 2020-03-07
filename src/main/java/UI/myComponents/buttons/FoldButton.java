@@ -1,5 +1,7 @@
 package UI.myComponents.buttons;
 
+import Core.Game.Player.PlayerType;
+
 import UI.myComponents.Events;
 import UI.myComponents.MyComponentsInterface;
 
@@ -13,8 +15,10 @@ import javafx.event.EventHandler;
 
 public class FoldButton extends Button implements MyComponentsInterface
 {
-    public FoldButton()
+    public FoldButton(PlayerType playerType)
     {
+        m_playerType = playerType;
+
         setText("FOLD");
         attachEventListeners();
     }
@@ -30,8 +34,12 @@ public class FoldButton extends Button implements MyComponentsInterface
     {
         setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent actionEvent) {
-                m_publisher.notifyControllers(Events.FOLD_BUTTON_1_CLICKED);
+            public void handle(ActionEvent actionEvent)
+            {
+                if(m_playerType == PlayerType.PLAYER_1)
+                    m_publisher.notifyControllers(Events.FOLD_BUTTON_1_CLICKED);
+                else if(m_playerType == PlayerType.PLAYER_2)
+                    m_publisher.notifyControllers(Events.FOLD_BUTTON_2_CLICKED);
             }
         });
     }
@@ -42,5 +50,6 @@ public class FoldButton extends Button implements MyComponentsInterface
         m_publisher = publisher;
     }
 
+    private PlayerType m_playerType;
     private Publisher m_publisher;
 }

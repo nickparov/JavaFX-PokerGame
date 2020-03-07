@@ -2,6 +2,7 @@ package UI.myComponents.card;
 
 import Core.Game.Card.Card;
 
+import Core.Game.Player.PlayerType;
 import UI.myComponents.Events;
 import UI.myComponents.MyComponentsInterface;
 
@@ -18,8 +19,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class CardView extends ImageView implements MyComponentsInterface {
-    public CardView(Card card)
+    public CardView(Card card, PlayerType playerType)
     {
+        m_playerType = playerType;
+
         loadCardImage(card);
         attachEventListeners();
     }
@@ -27,24 +30,39 @@ public class CardView extends ImageView implements MyComponentsInterface {
     @Override
     public void update(Events event)
     {
-        if(event == Events.FOLD_BUTTON_1_CLICKED)
-            flip();
+        if(event == Events.FOLD_BUTTON_1_CLICKED && m_playerType == PlayerType.PLAYER_1)
+        {
+            m_cardFolded = true;
+            shrinkCard();
+        }
+        else if(event == Events.FOLD_BUTTON_2_CLICKED && m_playerType == PlayerType.PLAYER_2)
+        {
+            m_cardFolded = true;
+            shrinkCard();
+        }
+        else if(event == Events.NEW_ROUND_BUTTON_CLICKED)
+        {
+            m_cardFolded = false;
+
+        }
     }
 
     @Override
     public void attachEventListeners()
     {
-//       addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-//            @Override
-//            public void handle(MouseEvent event) {
-//                flip();
-//            }
-//        });
+       addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                if(m_cardFolded == true) return;
+                flip();
+            }
+        });
 
 
         addEventHandler(MouseEvent.MOUSE_ENTERED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
+                if(m_cardFolded == true) return;
                 setScaleX(1.1);
                 setScaleY(1.1);
             }
@@ -53,6 +71,7 @@ public class CardView extends ImageView implements MyComponentsInterface {
         addEventHandler(MouseEvent.MOUSE_EXITED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
+                if(m_cardFolded == true) return;
                 setScaleX(1.0);
                 setScaleY(1.0);
             }
@@ -114,9 +133,25 @@ public class CardView extends ImageView implements MyComponentsInterface {
         part1.play();
     }
 
+    private void shrinkCard()
+    {
+        setScaleX(0.8);
+        setScaleY(0.8);
+    }
+
+    private void normalizeCard()
+    {
+        setScaleX(1.0);
+        setScaleY(1.0);
+    }
+
     private Image m_face = null;
     private Image m_back = null;
     private boolean m_faceIsActive;
+
+    private boolean m_cardFolded = false;
+
+    private PlayerType m_playerType;
 
     private Publisher m_publisher;
 }

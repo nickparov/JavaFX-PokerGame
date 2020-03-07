@@ -1,8 +1,11 @@
 package UI.myComponents;
 
-public enum Events {
+public enum Events
+{
     FOLD_BUTTON_1_CLICKED,
     FOLD_BUTTON_2_CLICKED,
+
+    NEW_ROUND_BUTTON_CLICKED,
 
     PLAY_BUTTON_1_CLICKED,
     PLAY_BUTTON_2_CLICKED,

@@ -29,14 +29,16 @@ public class GameFieldLayout implements LayoutInterface
         m_layout = new StackPane(
                 createCardGroup(LayoutConstants.P1_CARDS_POSITION, LayoutConstants.CARDS_SPACING, myComponentsManager.m_cards_p1),
                 createCardGroup(LayoutConstants.P2_CARDS_POSITION, LayoutConstants.CARDS_SPACING, myComponentsManager.m_cards_p2),
-                createCardGroup(LayoutConstants.DEALER_CARDS_POSITION, LayoutConstants.CARDS_SPACING, myComponentsManager.m_cards_dealer),
 
                 createButtonGroup(LayoutConstants.P1_BUTTONS_POSITION, LayoutConstants.BUTTONS_SPACING, myComponentsManager.m_fold_p1, myComponentsManager.m_play_p1),
                 createButtonGroup(LayoutConstants.P2_BUTTONS_POSITION, LayoutConstants.BUTTONS_SPACING, myComponentsManager.m_fold_p2, myComponentsManager.m_play_p2),
-                createButtonGroup(LayoutConstants.NEW_ROUND_BUTTON_POSITION, LayoutConstants.BUTTONS_SPACING, myComponentsManager.m_newRoundButton),
 
                 createTextFieldGroup(LayoutConstants.P1_TEXT_FIELDS_POSITION, LayoutConstants.TEXT_FIELDS_SPACING, myComponentsManager.m_anteBet_p1, myComponentsManager.m_pairPlus_p1),
-                createTextFieldGroup(LayoutConstants.P2_TEXT_FIELDS_POSITION, LayoutConstants.TEXT_FIELDS_SPACING, myComponentsManager.m_anteBet_p2, myComponentsManager.m_pairPlus_p2)
+                createTextFieldGroup(LayoutConstants.P2_TEXT_FIELDS_POSITION, LayoutConstants.TEXT_FIELDS_SPACING, myComponentsManager.m_anteBet_p2, myComponentsManager.m_pairPlus_p2),
+
+                createCardGroup(LayoutConstants.DEALER_CARDS_POSITION, LayoutConstants.CARDS_SPACING, myComponentsManager.m_cards_dealer),
+                createButtonGroup(LayoutConstants.NEW_ROUND_BUTTON_POSITION, LayoutConstants.BUTTONS_SPACING, myComponentsManager.m_newRoundButton)
+
         );
     }
 

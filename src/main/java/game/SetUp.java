@@ -8,7 +8,8 @@ public class SetUp
 {
     public SetUp()
     {
-        m_layoutManager = new LayoutManager(m_componentsController);
+        m_layoutManager = new LayoutManager(m_componentsManager);
+        ControlFlow.getInstance().setComponentManager(m_componentsManager);
     }
 
     public Scene getScene()
@@ -16,6 +17,6 @@ public class SetUp
         return m_layoutManager.getScene();
     }
 
-    private MyComponentsManager m_componentsController = new MyComponentsManager();
+    private MyComponentsManager m_componentsManager = new MyComponentsManager();
     private LayoutManager m_layoutManager;
 }
