@@ -75,7 +75,7 @@ public class ControlFlow implements Singleton
         m_componentsManager.m_play_p2.setDisable(false);
 
         m_componentsManager.m_dealButton.setDisable(true);
-        m_componentsManager.m_reveal_cards_button.setDisable(false);
+        //m_componentsManager.m_reveal_cards_button.setDisable(false);
     }
 
     public void revealAndCalculate(boolean player1Plays, boolean player2Plays)
@@ -119,8 +119,6 @@ public class ControlFlow implements Singleton
             case 2:  m_componentsManager.m_history.prependText("PLAYER2 WIN\n");
                 break;
         }
-
-        //m_componentsManager.m_history.prependText("DEALER WINS\n");
 
         m_componentsManager.m_fold_p1.setDisable(true);
         m_componentsManager.m_fold_p2.setDisable(true);

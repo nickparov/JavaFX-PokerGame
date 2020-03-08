@@ -57,7 +57,6 @@ public class GameFieldLayout implements LayoutInterface
         return groupLayer;
     }
 
-
     private StackPane m_layout;
 }
 
