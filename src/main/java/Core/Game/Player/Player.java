@@ -15,6 +15,7 @@ public class Player {
     private int _playBet;
     private int _pairPlusBet;
     private int _totalWinnings;
+    private int _balance;
 
     public Player() {
         _Hand = new ArrayList<Card>();
@@ -40,6 +41,10 @@ public class Player {
     public void SetTotalWinnings(int totalWinnings) {
         _totalWinnings = totalWinnings;
     }
+
+    public void SetBalance(int bal) {
+      _balance = bal;
+    }
     // Getters
     public ArrayList<Card> GetHand() {
         return _Hand;
@@ -59,6 +64,10 @@ public class Player {
 
     public int GetTotalWinnings() {
         return _totalWinnings;
+    }
+
+    public int GetBalance() {
+      return _balance;
     }
 
 
