@@ -29,9 +29,9 @@ public class Dealer {
     }
   }
 
-  public boolean hasQueen() {
+  public boolean hasQueenOrAbove() {
     for(Card c : _Hand) {
-      if(c.getValue() == 12)
+      if(c.getValue() >= 12)
         return true;
     }
     return false;

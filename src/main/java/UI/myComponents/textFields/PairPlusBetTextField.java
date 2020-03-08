@@ -9,7 +9,8 @@ public class PairPlusBetTextField extends TextField implements MyComponentsInter
 {
     public PairPlusBetTextField()
     {
-        setPromptText("pair plus bet");
+        setPromptText("pair plus wager");
+        setMaxWidth(getPromptText().length() * 9);
     }
 
     @Override

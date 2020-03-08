@@ -33,11 +33,11 @@ public class GameFieldLayout implements LayoutInterface
                 createGroup(LayoutConstants.P1_CARDS_POSITION, LayoutConstants.CARDS_SPACING, myComponentsManager.m_cards_p1),
                 createGroup(LayoutConstants.P2_CARDS_POSITION, LayoutConstants.CARDS_SPACING, myComponentsManager.m_cards_p2),
 
-                createGroup(LayoutConstants.P1_BUTTONS_POSITION, LayoutConstants.BUTTONS_SPACING, myComponentsManager.m_fold_p1, myComponentsManager.m_play_p1),
-                createGroup(LayoutConstants.P2_BUTTONS_POSITION, LayoutConstants.BUTTONS_SPACING, myComponentsManager.m_fold_p2, myComponentsManager.m_play_p2),
+                createGroup(LayoutConstants.P1_BUTTONS_POSITION, LayoutConstants.BUTTONS_SPACING, myComponentsManager.m_fold_p1, myComponentsManager.m_play_p1, myComponentsManager.m_total_winnings_p1),
+                createGroup(LayoutConstants.P2_BUTTONS_POSITION, LayoutConstants.BUTTONS_SPACING, myComponentsManager.m_fold_p2, myComponentsManager.m_play_p2, myComponentsManager.m_total_winnings_p2),
 
-                createGroup(LayoutConstants.P1_TEXT_FIELDS_POSITION, LayoutConstants.TEXT_FIELDS_SPACING, myComponentsManager.m_anteBet_p1, myComponentsManager.m_pairPlus_p1),
-                createGroup(LayoutConstants.P2_TEXT_FIELDS_POSITION, LayoutConstants.TEXT_FIELDS_SPACING, myComponentsManager.m_anteBet_p2, myComponentsManager.m_pairPlus_p2),
+                createGroup(LayoutConstants.P1_TEXT_FIELDS_POSITION, LayoutConstants.TEXT_FIELDS_SPACING, myComponentsManager.m_anteBet_p1, myComponentsManager.m_pairPlus_p1, myComponentsManager.m_playWager_p1),
+                createGroup(LayoutConstants.P2_TEXT_FIELDS_POSITION, LayoutConstants.TEXT_FIELDS_SPACING, myComponentsManager.m_anteBet_p2, myComponentsManager.m_pairPlus_p2, myComponentsManager.m_playWager_p2),
 
                 createGroup(LayoutConstants.DEALER_CARDS_POSITION, LayoutConstants.CARDS_SPACING, myComponentsManager.m_cards_dealer),
                 createGroup(LayoutConstants.MAKE_BETS_BUTTON_POSITION, LayoutConstants.BUTTONS_SPACING, myComponentsManager.m_make_bets_button, myComponentsManager.m_dealButton, myComponentsManager.m_reveal_cards_button, myComponentsManager.m_newRoundButton)

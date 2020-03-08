@@ -3,16 +3,16 @@ package UI.myComponents.textFields;
 import UI.myComponents.Events;
 import UI.myComponents.MyComponentsInterface;
 import UI.myComponents.Publisher;
-import game.ControlFlow;
-import javafx.beans.InvalidationListener;
 import javafx.scene.control.TextField;
 
-public class AnteBetTextField extends TextField implements MyComponentsInterface
+public class PlayWager extends TextField implements MyComponentsInterface
 {
-    public AnteBetTextField()
+    public PlayWager()
     {
-        setPromptText("ante wager");
+        setPromptText("play wager");
         setMaxWidth(getPromptText().length() * 9);
+
+        setEditable(false);
     }
 
     @Override

@@ -6,9 +6,11 @@ import Core.Game.Player.PlayerType;
 import UI.myComponents.buttons.*;
 
 import UI.myComponents.card.CardView;
+import UI.myComponents.labels.TotalWinnings;
 import UI.myComponents.textAreas.HistoryTextArea;
 import UI.myComponents.textFields.AnteBetTextField;
 import UI.myComponents.textFields.PairPlusBetTextField;
+import UI.myComponents.textFields.PlayWager;
 import game.ControlFlow;
 
 import java.util.ArrayList;
@@ -58,8 +60,10 @@ public class MyComponentsManager
         m_ControllersManager.addComponents(
                 m_fold_p1,
                 m_fold_p2,
+                m_total_winnings_p1,
                 m_play_p1,
                 m_play_p2,
+                m_total_winnings_p2,
                 m_newRoundButton,
                 m_make_bets_button,
                 m_reveal_cards_button,
@@ -68,6 +72,8 @@ public class MyComponentsManager
                 m_anteBet_p2,
                 m_pairPlus_p1,
                 m_pairPlus_p2,
+                m_playWager_p1,
+                m_playWager_p2,
                 m_history
         );
 
@@ -80,6 +86,8 @@ public class MyComponentsManager
 
     public FoldButton m_fold_p1 = new FoldButton(PlayerType.PLAYER_1);
     public FoldButton m_fold_p2 = new FoldButton(PlayerType.PLAYER_2);
+    public TotalWinnings m_total_winnings_p1 = new TotalWinnings(PlayerType.PLAYER_1);
+    public TotalWinnings m_total_winnings_p2 = new TotalWinnings(PlayerType.PLAYER_2);
 
     public PlayButton m_play_p1 = new PlayButton(PlayerType.PLAYER_1);
     public PlayButton m_play_p2 = new PlayButton(PlayerType.PLAYER_2);
@@ -91,6 +99,8 @@ public class MyComponentsManager
 
     public AnteBetTextField m_anteBet_p1 = new AnteBetTextField();
     public AnteBetTextField m_anteBet_p2 = new AnteBetTextField();
+    public PlayWager m_playWager_p1 = new PlayWager();
+    public PlayWager m_playWager_p2 = new PlayWager();
 
     public PairPlusBetTextField m_pairPlus_p1 = new PairPlusBetTextField();
     public PairPlusBetTextField m_pairPlus_p2 = new PairPlusBetTextField();
