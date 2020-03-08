@@ -10,7 +10,6 @@ public class Dealer {
 
   public Dealer() {
     _GameDeck = new Deck();
-    _DeckCards = _GameDeck.getDeck();
   }
 
   public ArrayList<Card> DealHand() {
@@ -19,20 +18,14 @@ public class Dealer {
 
     // get 3 cards from the deck
     for(int i = 0; i < 3; i++) {
-      Hand.add(_DeckCards.remove(_DeckCards.size() - 1));
+      Hand.add(_GameDeck.getDeck().remove(_GameDeck.getDeck().size() - 1));
     }
     // return hand
     return Hand;
   }
 
   public void CheckDeck() {
-    /*
-      if there are more
-      than 34 cards left in the deck. If not, theDeck must be reshuffled with a new set of 52
-      cards in random order.
-    */
-
-    if(_DeckCards.size() < 34) {
+    if(_GameDeck.getDeck().size() < 34) {
       _GameDeck.newDeck();
     }
   }

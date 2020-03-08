@@ -21,6 +21,8 @@ public class FoldButton extends Button implements MyComponentsInterface
 
         setText("FOLD");
         attachEventListeners();
+
+        setDisable(true);
     }
 
     @Override

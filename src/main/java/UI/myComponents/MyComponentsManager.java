@@ -3,11 +3,10 @@ package UI.myComponents;
 import Core.Game.Card.Card;
 
 import Core.Game.Player.PlayerType;
-import UI.myComponents.buttons.FoldButton;
-import UI.myComponents.buttons.NewRoundButton;
-import UI.myComponents.buttons.PlayButton;
+import UI.myComponents.buttons.*;
 
 import UI.myComponents.card.CardView;
+import UI.myComponents.textAreas.HistoryTextArea;
 import UI.myComponents.textFields.AnteBetTextField;
 import UI.myComponents.textFields.PairPlusBetTextField;
 import game.ControlFlow;
@@ -62,10 +61,14 @@ public class MyComponentsManager
                 m_play_p1,
                 m_play_p2,
                 m_newRoundButton,
+                m_make_bets_button,
+                m_reveal_cards_button,
+                m_dealButton,
                 m_anteBet_p1,
                 m_anteBet_p2,
                 m_pairPlus_p1,
-                m_pairPlus_p2
+                m_pairPlus_p2,
+                m_history
         );
 
         m_ControllersManager.addComponents(m_cards_p1);
@@ -78,16 +81,21 @@ public class MyComponentsManager
     public FoldButton m_fold_p1 = new FoldButton(PlayerType.PLAYER_1);
     public FoldButton m_fold_p2 = new FoldButton(PlayerType.PLAYER_2);
 
-    public PlayButton m_play_p1 = new PlayButton();
-    public PlayButton m_play_p2 = new PlayButton();
+    public PlayButton m_play_p1 = new PlayButton(PlayerType.PLAYER_1);
+    public PlayButton m_play_p2 = new PlayButton(PlayerType.PLAYER_2);
 
     public NewRoundButton m_newRoundButton = new NewRoundButton();
+    public MakeBetsButton m_make_bets_button = new MakeBetsButton();
+    public DealButton m_dealButton = new DealButton();
+    public RevealCardsButton m_reveal_cards_button = new RevealCardsButton();
 
     public AnteBetTextField m_anteBet_p1 = new AnteBetTextField();
     public AnteBetTextField m_anteBet_p2 = new AnteBetTextField();
 
     public PairPlusBetTextField m_pairPlus_p1 = new PairPlusBetTextField();
     public PairPlusBetTextField m_pairPlus_p2 = new PairPlusBetTextField();
+
+    public HistoryTextArea m_history = new HistoryTextArea();
 
     public CardView[] m_cards_p1 = new CardView[3];
     public CardView[] m_cards_p2 = new CardView[3];

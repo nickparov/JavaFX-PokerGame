@@ -21,6 +21,8 @@ import java.io.FileNotFoundException;
 public class CardView extends ImageView implements MyComponentsInterface {
     public CardView(Card card, PlayerType playerType)
     {
+        m_card = card;
+
         m_playerType = playerType;
 
         loadCardImage(card);
@@ -90,6 +92,7 @@ public class CardView extends ImageView implements MyComponentsInterface {
         try {
             m_face = new Image(new FileInputStream(CardDatabase.getInstance().getCardFileName(card)));
             m_back = new Image(new FileInputStream("src/res/Cards/14C.png"));
+            //m_back = new Image(new FileInputStream(CardDatabase.getInstance().getCardFileName(new Card('S', 13))));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -101,18 +104,25 @@ public class CardView extends ImageView implements MyComponentsInterface {
         setImage(m_back);
     }
 
+
+    public Card getCard()
+    {
+        return m_card;
+    }
+
     public void changeCard(Card newCard)
     {
+        m_card = newCard;
         loadCardImage(newCard);
     }
 
-    private void flip()
+    public void flip()
     {
-        ScaleTransition part1 = new ScaleTransition(Duration.millis(300), this);
+        ScaleTransition part1 = new ScaleTransition(Duration.millis(CardConstants.FLIP_ANIMATION_TIME / 2), this);
         part1.setFromX(1.0);
         part1.setToX(0.15);
 
-        ScaleTransition part2 = new ScaleTransition(Duration.millis(300), this);
+        ScaleTransition part2 = new ScaleTransition(Duration.millis(CardConstants.FLIP_ANIMATION_TIME / 2), this);
         part2.setFromX(0.15);
         part2.setToX(1.0);
 
@@ -144,6 +154,8 @@ public class CardView extends ImageView implements MyComponentsInterface {
         setScaleX(1.0);
         setScaleY(1.0);
     }
+
+    private Card m_card;
 
     private Image m_face = null;
     private Image m_back = null;

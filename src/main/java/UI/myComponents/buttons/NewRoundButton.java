@@ -12,8 +12,10 @@ public class NewRoundButton extends Button implements MyComponentsInterface
 {
     public NewRoundButton()
     {
-        setText("ROUND");
+        setText("NEW ROUND");
         attachEventListeners();
+
+        setDisable(true);
     }
 
     @Override
@@ -28,7 +30,7 @@ public class NewRoundButton extends Button implements MyComponentsInterface
         setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                ControlFlow.getInstance().startRound();
+                ControlFlow.getInstance().finishRound();
                 m_publisher.notifyControllers(Events.NEW_ROUND_BUTTON_CLICKED);
             }
         });

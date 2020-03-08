@@ -3,6 +3,7 @@ package UI.myComponents.textFields;
 import UI.myComponents.Events;
 import UI.myComponents.MyComponentsInterface;
 import UI.myComponents.Publisher;
+import game.ControlFlow;
 import javafx.beans.InvalidationListener;
 import javafx.scene.control.TextField;
 
@@ -35,6 +36,8 @@ public class AnteBetTextField extends TextField implements MyComponentsInterface
     {
         textProperty().addListener((observable, oldValue, newValue ) -> {
             // TODO
+
+
         });
 
     }

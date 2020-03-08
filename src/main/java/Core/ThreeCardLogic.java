@@ -148,12 +148,5 @@ public class ThreeCardLogic {
     }
 
     return res;
-
-
-    
-
-
-
-    
   }
 }

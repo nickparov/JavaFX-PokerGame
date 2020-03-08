@@ -1,23 +1,20 @@
 package UI.myComponents.buttons;
 
-import Core.Game.Player.PlayerType;
 import UI.myComponents.Events;
 import UI.myComponents.MyComponentsInterface;
+import UI.myComponents.MyComponentsManager;
 import UI.myComponents.Publisher;
+import game.ControlFlow;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 
-public class PlayButton extends Button implements MyComponentsInterface
+public class MakeBetsButton extends Button implements MyComponentsInterface
 {
-    public PlayButton(PlayerType playerType)
+    public MakeBetsButton()
     {
-        m_playerType = playerType;
-
-        setText("PLAY");
+        setText("MAKE BETS");
         attachEventListeners();
-
-        setDisable(true);
     }
 
     @Override
@@ -31,12 +28,10 @@ public class PlayButton extends Button implements MyComponentsInterface
     {
         setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent actionEvent) {
-                //System.out.println("PLAYE\n");
-                if(m_playerType == PlayerType.PLAYER_1)
-                    m_publisher.notifyControllers(Events.PLAY_BUTTON_1_CLICKED);
-                else if(m_playerType == PlayerType.PLAYER_2)
-                    m_publisher.notifyControllers(Events.PLAY_BUTTON_2_CLICKED);
+            public void handle(ActionEvent actionEvent)
+            {
+                ControlFlow.getInstance().makeBets();
+                m_publisher.notifyControllers(Events.MAKE_BETS_BUTTON_CLICKED);
             }
         });
     }
@@ -47,6 +42,6 @@ public class PlayButton extends Button implements MyComponentsInterface
         m_publisher = publisher;
     }
 
-    private PlayerType m_playerType;
+
     private Publisher m_publisher;
 }
