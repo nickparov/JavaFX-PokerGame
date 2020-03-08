@@ -84,7 +84,17 @@ public class ThreeCardLogic {
     return isStraight(handInfo) && isThreeOfKind(handInfo) ? true : false;
   }
 
+  public static int getHighCardFromHand(ArrayList<Card> passedHand) {
+    int max = 0;
+    
+    for(Card c : passedHand) {
+      if(c.getValue() > max)
+        max = c.getValue();
+    }
 
+    return max;
+    
+  }
 
   public static int evalHand(ArrayList<Card> Hand) {
     

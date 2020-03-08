@@ -6,7 +6,6 @@ import java.util.ArrayList;
 public class Dealer {
   private Deck _GameDeck;
   private ArrayList<Card> _Hand;
-  private ArrayList<Card> _DeckCards;
 
   public Dealer() {
     _GameDeck = new Deck();
@@ -28,6 +27,14 @@ public class Dealer {
     if(_GameDeck.getDeck().size() < 34) {
       _GameDeck.newDeck();
     }
+  }
+
+  public boolean hasQueen() {
+    for(Card c : _Hand) {
+      if(c.getValue() == 12)
+        return true;
+    }
+    return false;
   }
 
   public void SetHand(ArrayList<Card> givenHand) {
