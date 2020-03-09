@@ -33,15 +33,16 @@ public class PlayWager extends TextField implements MyComponentsInterface
         m_publisher = publisher;
     }
 
-    void setEventListeners()
+    // Assumed the text is an integer
+    public int getInt()
     {
-        textProperty().addListener((observable, oldValue, newValue ) -> {
-            // TODO
+        if(getText().isEmpty())
+            return 0;
 
-
-        });
-
+        return Integer.parseInt(getText());
     }
+
+
 
     private Publisher m_publisher;
 }

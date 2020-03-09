@@ -4,6 +4,7 @@ import UI.myComponents.Events;
 import UI.myComponents.MyComponentsInterface;
 import UI.myComponents.Publisher;
 import game.ControlFlow;
+import game.ControlFlowContext;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
@@ -30,7 +31,8 @@ public class NewRoundButton extends Button implements MyComponentsInterface
         setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                ControlFlow.getInstance().finishRound();
+                ControlFlowContext.getInstance().processState();
+                //ControlFlow.getInstance().finishRound();
                 m_publisher.notifyControllers(Events.NEW_ROUND_BUTTON_CLICKED);
             }
         });

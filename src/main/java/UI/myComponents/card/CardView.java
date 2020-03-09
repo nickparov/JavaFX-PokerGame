@@ -64,13 +64,13 @@ public class CardView extends ImageView implements MyComponentsInterface {
     @Override
     public void attachEventListeners()
     {
-       addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                if(m_cardScaleDisabled) return;
-                flip();
-            }
-        });
+//       addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+//            @Override
+//            public void handle(MouseEvent event) {
+//                if(m_cardScaleDisabled) return;
+//                flip();
+//            }
+//        });
 
 
         addEventHandler(MouseEvent.MOUSE_ENTERED, new EventHandler<MouseEvent>() {

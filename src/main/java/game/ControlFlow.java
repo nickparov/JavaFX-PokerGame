@@ -88,16 +88,20 @@ public class ControlFlow implements Singleton
             );
 
             m_componentsManager.m_history.prependText("PLAYER ONE FOLD\n");
+            m_componentsManager.m_anteBet_p1.setText("");
+            m_componentsManager.m_pairPlus_p1.setText("");
         }
 
         if(!player2Plays)
         {
             m_componentsManager.m_total_winnings_p2.add(
                     -Integer.parseInt(m_componentsManager.m_anteBet_p2.getText())
-                            -Integer.parseInt(m_componentsManager.m_pairPlus_p2.getText())
+                            - Integer.parseInt(m_componentsManager.m_pairPlus_p2.getText())
             );
 
             m_componentsManager.m_history.prependText("PLAYER TWO FOLD\n");
+            m_componentsManager.m_anteBet_p2.setText("");
+            m_componentsManager.m_pairPlus_p2.setText("");
         }
 
 
@@ -108,7 +112,7 @@ public class ControlFlow implements Singleton
 
         if(!m_dealer.hasQueenOrAbove())
         {
-            
+            dealCards();
         }
 
     }

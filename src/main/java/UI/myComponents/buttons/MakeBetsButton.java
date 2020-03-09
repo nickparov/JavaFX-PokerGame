@@ -5,6 +5,7 @@ import UI.myComponents.MyComponentsInterface;
 import UI.myComponents.MyComponentsManager;
 import UI.myComponents.Publisher;
 import game.ControlFlow;
+import game.ControlFlowContext;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
@@ -30,7 +31,8 @@ public class MakeBetsButton extends Button implements MyComponentsInterface
             @Override
             public void handle(ActionEvent actionEvent)
             {
-                ControlFlow.getInstance().makeBets();
+                ControlFlowContext.getInstance().processState();
+                //ControlFlow.getInstance().makeBets();
                 m_publisher.notifyControllers(Events.MAKE_BETS_BUTTON_CLICKED);
             }
         });

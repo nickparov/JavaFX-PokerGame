@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a4aaed7-0f04-494c-91cb-04d07cd18f90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/labels/TotalWinnings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/textFields/PlayWager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/ControlFlowContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/states/DealState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/states/FinishRoundState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/states/GameState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/states/MakeBetsState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/states/RevealState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Game/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Game/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/layout/GameFieldLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/layout/GameFieldLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/MyComponentsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/MyComponentsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/DealButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/DealButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/MakeBetsButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/MakeBetsButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/NewRoundButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/NewRoundButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/RevealCardsButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/RevealCardsButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/card/CardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/card/CardView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/textFields/AnteBetTextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/textFields/AnteBetTextField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/textFields/PairPlusBetTextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/textFields/PairPlusBetTextField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/textFields/PlayWager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/textFields/PlayWager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/ControlFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/ControlFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/SetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/SetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Core/Game/Dealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Core/Game/Dealer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Core/ThreeCardLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Core/ThreeCardLogic.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -95,30 +105,34 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="444" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1583373253993" />
-    <state x="677" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1583449018038">
+    <state x="677" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1583706252374">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="677" y="242" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1583449018038" />
+    <state x="677" y="242" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1583706252374" />
     <state x="566" y="447" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1583374472195">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="566" y="447" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1583374472195" />
-    <state width="1638" height="124" key="GridCell.Tab.0.bottom" timestamp="1583704342499">
+    <state x="579" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583706524041">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="124" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583704342499" />
-    <state width="1638" height="124" key="GridCell.Tab.0.center" timestamp="1583704342498">
+    <state x="579" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1583706524041" />
+    <state width="1638" height="124" key="GridCell.Tab.0.bottom" timestamp="1583718954351">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="124" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583704342498" />
-    <state width="1638" height="124" key="GridCell.Tab.0.left" timestamp="1583704342498">
+    <state width="1638" height="124" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583718954351" />
+    <state width="1638" height="124" key="GridCell.Tab.0.center" timestamp="1583718954351">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="124" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583704342498" />
-    <state width="1638" height="124" key="GridCell.Tab.0.right" timestamp="1583704342499">
+    <state width="1638" height="124" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583718954351" />
+    <state width="1638" height="124" key="GridCell.Tab.0.left" timestamp="1583718954350">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="124" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583704342499" />
+    <state width="1638" height="124" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583718954350" />
+    <state width="1638" height="124" key="GridCell.Tab.0.right" timestamp="1583718954351">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="124" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583718954351" />
     <state width="1508" height="329" key="GridCell.Tab.1.bottom" timestamp="1583437999011">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

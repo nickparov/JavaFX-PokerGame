@@ -4,6 +4,7 @@ import UI.myComponents.Events;
 import UI.myComponents.MyComponentsInterface;
 import UI.myComponents.Publisher;
 import game.ControlFlow;
+import game.ControlFlowContext;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
@@ -57,7 +58,8 @@ public class RevealCardsButton extends Button implements MyComponentsInterface
             public void handle(ActionEvent actionEvent)
             {
                 m_counter = 0;
-                ControlFlow.getInstance().revealAndCalculate(m_player1_plays, m_player2_plays);
+                ControlFlowContext.getInstance().processState(m_player1_plays, m_player2_plays);
+                //ControlFlow.getInstance().revealAndCalculate(m_player1_plays, m_player2_plays);
                 m_publisher.notifyControllers(Events.REVEAL_CARDS_BUTTON_CLICKED);
             }
         });
