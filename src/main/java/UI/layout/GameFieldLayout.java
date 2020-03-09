@@ -13,7 +13,7 @@ import javafx.scene.paint.Color;
 import java.awt.*;
 
 
-public class GameFieldLayout implements LayoutInterface
+public class GameFieldLayout implements LayoutInterface<StackPane>
 {
 
     public GameFieldLayout(MyComponentsManager myComponentsManager)

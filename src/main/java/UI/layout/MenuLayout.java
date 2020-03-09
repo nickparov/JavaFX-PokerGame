@@ -14,7 +14,7 @@ import javafx.scene.layout.StackPane;
 
 import static java.lang.System.exit;
 
-public class MenuLayout extends HBox implements LayoutInterface
+public class MenuLayout extends HBox implements LayoutInterface<StackPane>
 {
     public MenuLayout(BackGroundLayout backgroundLayout)
     {

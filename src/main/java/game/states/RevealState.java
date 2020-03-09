@@ -6,15 +6,13 @@ import Core.ThreeCardLogic;
 import UI.myComponents.MyComponentsManager;
 import game.ControlFlowContext;
 
-import java.text.ParseException;
 
-public class RevealState extends GameState
+public class RevealState extends GameState<Boolean>
 {
     @Override
-    public <T>
-    void processState(T ...args)
+    public void processState(Boolean ...args)
     {
-        process((boolean) args[0], (boolean) args[1]);
+        process(args[0], args[1]);
 
         finishState();
         gotoNextState();

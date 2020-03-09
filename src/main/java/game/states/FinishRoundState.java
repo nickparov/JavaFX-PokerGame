@@ -3,11 +3,10 @@ package game.states;
 import UI.myComponents.MyComponentsManager;
 import game.ControlFlowContext;
 
-public class FinishRoundState extends GameState
+public class FinishRoundState extends GameState<Object>
 {
     @Override
-    public <T>
-    void processState(T ...args)
+    public void processState(Object ...args)
     {
         process();
 

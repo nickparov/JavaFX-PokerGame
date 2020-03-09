@@ -5,11 +5,10 @@ import game.ControlFlowContext;
 
 import java.awt.*;
 
-public class MakeBetsState extends GameState
+public class MakeBetsState extends GameState<Object>
 {
     @Override
-    public <T>
-    void processState(T... args)
+    public void processState(Object... args)
     {
         if (!process())
             return;

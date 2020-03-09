@@ -7,11 +7,10 @@ import Core.ThreeCardLogic;
 import UI.myComponents.MyComponentsManager;
 import game.ControlFlowContext;
 
-public class DealState extends GameState
+public class DealState extends GameState<Object>
 {
     @Override
-    public <T>
-    void processState(T ...args)
+    public void processState(Object ...args)
     {
         process();
 

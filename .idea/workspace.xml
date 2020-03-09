@@ -2,32 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a4aaed7-0f04-494c-91cb-04d07cd18f90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/layout/BackGroundLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/layout/MenuLayout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/layout/BackGroundLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/layout/BackGroundLayout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/layout/GameFieldLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/layout/GameFieldLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/layout/LayoutManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/layout/LayoutManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/MyComponentsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/MyComponentsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/DealButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/DealButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/MakeBetsButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/MakeBetsButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/NewRoundButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/NewRoundButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/PlayButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/PlayButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/RevealCardsButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/buttons/RevealCardsButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/card/CardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/card/CardView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/labels/TotalWinnings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/labels/TotalWinnings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/textFields/AnteBetTextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/textFields/AnteBetTextField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/myComponents/textFields/PairPlusBetTextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/myComponents/textFields/PairPlusBetTextField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/ControlFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/ControlFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/ControlFlowContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/ControlFlowContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/layout/LayoutInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/layout/LayoutInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/layout/MenuLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/layout/MenuLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/states/DealState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/states/DealState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/states/FinishRoundState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/states/FinishRoundState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/states/GameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/game/states/MakeBetsState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/states/MakeBetsState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/Cards/Asset 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/states/RevealState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/states/RevealState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Core/Game/Dealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Core/Game/Dealer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Core/Game/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Core/Game/Deck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Core/ThreeCardLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Core/ThreeCardLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ThreeCardPokerGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ThreeCardPokerGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/UI/layout/LayoutInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UI/layout/LayoutInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UI/layout/LayoutManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UI/layout/LayoutManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ThreeCardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ThreeCardTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,22 +113,22 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="579" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1583722953619" />
-    <state width="1638" height="124" key="GridCell.Tab.0.bottom" timestamp="1583723079217">
+    <state width="1638" height="124" key="GridCell.Tab.0.bottom" timestamp="1583731806836">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="124" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583723079217" />
-    <state width="1638" height="124" key="GridCell.Tab.0.center" timestamp="1583723079216">
+    <state width="1638" height="124" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583731806836" />
+    <state width="1638" height="124" key="GridCell.Tab.0.center" timestamp="1583731806836">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="124" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583723079216" />
-    <state width="1638" height="124" key="GridCell.Tab.0.left" timestamp="1583723079216">
+    <state width="1638" height="124" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583731806836" />
+    <state width="1638" height="124" key="GridCell.Tab.0.left" timestamp="1583731806835">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="124" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583723079216" />
-    <state width="1638" height="124" key="GridCell.Tab.0.right" timestamp="1583723079217">
+    <state width="1638" height="124" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583731806835" />
+    <state width="1638" height="124" key="GridCell.Tab.0.right" timestamp="1583731806836">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="124" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583723079217" />
+    <state width="1638" height="124" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583731806836" />
     <state width="1508" height="329" key="GridCell.Tab.1.bottom" timestamp="1583437999011">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

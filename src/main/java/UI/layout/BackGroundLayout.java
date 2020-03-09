@@ -7,7 +7,7 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 
-public class BackGroundLayout implements LayoutInterface
+public class BackGroundLayout implements LayoutInterface<StackPane>
 {
     BackGroundLayout()
     {
