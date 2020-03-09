@@ -22,6 +22,13 @@ public class TotalWinnings extends Label implements MyComponentsInterface
         updateText();
     }
 
+    public void set(int val)
+    {
+        m_totalWinnings = 0;
+
+        updateText();
+    }
+
     private void updateText()
     {
         if(m_playerType == PlayerType.PLAYER_1)

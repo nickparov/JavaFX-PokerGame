@@ -11,7 +11,6 @@ import UI.myComponents.textAreas.HistoryTextArea;
 import UI.myComponents.textFields.AnteBetTextField;
 import UI.myComponents.textFields.PairPlusBetTextField;
 import UI.myComponents.textFields.PlayWager;
-import game.ControlFlow;
 
 import java.util.ArrayList;
 
@@ -21,11 +20,6 @@ public class MyComponentsManager
     {
         initializeComponents();
         linkComponents();
-    }
-
-    public void setControlFlow(ControlFlow controlFlow)
-    {
-        m_controlFlow = controlFlow;
     }
 
     public void setHand(ArrayList<Card> newHand, PlayerType playerType)
@@ -112,6 +106,4 @@ public class MyComponentsManager
     public CardView[] m_cards_dealer = new CardView[3];
 
     public Publisher m_ControllersManager = new Publisher();
-
-    private ControlFlow m_controlFlow;
 }

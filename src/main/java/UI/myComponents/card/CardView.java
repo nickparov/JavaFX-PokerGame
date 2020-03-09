@@ -64,15 +64,6 @@ public class CardView extends ImageView implements MyComponentsInterface {
     @Override
     public void attachEventListeners()
     {
-//       addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-//            @Override
-//            public void handle(MouseEvent event) {
-//                if(m_cardScaleDisabled) return;
-//                flip();
-//            }
-//        });
-
-
         addEventHandler(MouseEvent.MOUSE_ENTERED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -103,7 +94,7 @@ public class CardView extends ImageView implements MyComponentsInterface {
     {
         try {
             m_face = new Image(new FileInputStream(CardDatabase.getInstance().getCardFileName(card)));
-            m_back = new Image(new FileInputStream("src/res/Cards/14C.png"));
+            m_back = new Image(new FileInputStream("src/res/Cards/back.png"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -157,6 +148,13 @@ public class CardView extends ImageView implements MyComponentsInterface {
         });
 
         part1.play();
+    }
+
+    public void closeCard()
+    {
+        setImage(m_back);
+        m_faceIsActive = false;
+        normalizeCard();
     }
 
     private void shrinkCard()

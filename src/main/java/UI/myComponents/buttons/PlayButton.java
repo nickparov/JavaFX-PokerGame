@@ -32,7 +32,6 @@ public class PlayButton extends Button implements MyComponentsInterface
         setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                //System.out.println("PLAYE\n");
                 if(m_playerType == PlayerType.PLAYER_1)
                     m_publisher.notifyControllers(Events.PLAY_BUTTON_1_CLICKED);
                 else if(m_playerType == PlayerType.PLAYER_2)

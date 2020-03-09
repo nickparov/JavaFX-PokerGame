@@ -3,8 +3,10 @@ package game;
 import Core.Game.Dealer;
 import Core.Game.Player.Player;
 import UI.myComponents.MyComponentsManager;
+import game.states.FinishRoundState;
 import game.states.GameState;
 import game.states.MakeBetsState;
+import javafx.scene.layout.HBox;
 
 public class ControlFlowContext
 {
@@ -52,6 +54,17 @@ public class ControlFlowContext
     public Dealer getDealer()
     {
         return m_dealer;
+    }
+
+    public void freshStart()
+    {
+        FinishRoundState finishRoundState = new FinishRoundState();
+        finishRoundState.startState();
+        finishRoundState.processState();
+        changeState(new MakeBetsState());
+
+        m_componentsManager.m_total_winnings_p1.set(0);
+        m_componentsManager.m_total_winnings_p2.set(0);
     }
 
     private ControlFlowContext()

@@ -49,12 +49,12 @@ public class PairPlusBetTextField extends TextField implements MyComponentsInter
         }
         catch (NumberFormatException nfe)
         {
-            histoty.prependText("ALL WAGERS MUST BE NUMBERS\n");
+            histoty.prependText("All wagers must be numbersS\n");
             return false;
         }
 
         if(number < 5 || number > 25) {
-            histoty.prependText("WAGERS MUST BE BETWEEN 5 AND 25\n");
+            histoty.prependText("Wagers must be between 5 and 25\n");
             return false;
         }
 

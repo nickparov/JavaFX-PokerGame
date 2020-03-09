@@ -7,7 +7,6 @@ import UI.myComponents.MyComponentsInterface;
 
 import UI.myComponents.MyComponentsManager;
 import UI.myComponents.Publisher;
-import game.ControlFlow;
 import game.ControlFlowContext;
 import javafx.event.Event;
 import javafx.scene.control.Button;
@@ -40,7 +39,6 @@ public class DealButton extends Button implements MyComponentsInterface
             public void handle(ActionEvent actionEvent)
             {
                 ControlFlowContext.getInstance().processState();
-                //ControlFlow.getInstance().dealCards();
                 m_publisher.notifyControllers(Events.DEAL_BUTTON_CLICKED);
             }
         });

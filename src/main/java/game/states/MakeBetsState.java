@@ -53,9 +53,7 @@ public class MakeBetsState extends GameState
             return false;
         }
 
-        m_componentsManager.m_history.prependText("bets made successfully\n");
-//        m_componentsManager.m_history.prependText("PLAYER'S 1 ANTE BET IS: " + m_componentsManager.m_anteBet_p1.getText() + "\n");
-//        m_componentsManager.m_history.prependText("PLAYER'S 2 ANTE BET IS: " + m_componentsManager.m_anteBet_p2.getText() + "\n");
+        m_componentsManager.m_history.prependText("Bets made successfully\n");
 
         return true;
     }

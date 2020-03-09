@@ -3,11 +3,14 @@ package UI.layout;
 import UI.myComponents.MyComponentsManager;
 import UI.myComponents.card.CardView;
 
+import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
+
+import java.awt.*;
 
 
 public class GameFieldLayout implements LayoutInterface

@@ -3,7 +3,6 @@ package UI.myComponents.buttons;
 import UI.myComponents.Events;
 import UI.myComponents.MyComponentsInterface;
 import UI.myComponents.Publisher;
-import game.ControlFlow;
 import game.ControlFlowContext;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -24,29 +23,29 @@ public class RevealCardsButton extends Button implements MyComponentsInterface
     {
         if (event == Events.PLAY_BUTTON_1_CLICKED)
         {
-            m_counter++;
+            m_counter_p1++;
             m_player1_plays = true;
         }
 
         else if(event == Events.PLAY_BUTTON_2_CLICKED)
         {
-            m_counter++;
+            m_counter_p2++;
             m_player2_plays = true;
         }
 
         else if(event == Events.FOLD_BUTTON_1_CLICKED)
         {
-            m_counter++;
+            m_counter_p1++;
             m_player1_plays = false;
         }
 
         else if(event == Events.FOLD_BUTTON_2_CLICKED)
         {
-            m_counter++;
+            m_counter_p2++;
             m_player2_plays = false;
         }
 
-        if(m_counter == 2)
+        if(m_counter_p1 >= 1 && m_counter_p2 >= 1)
             setDisable(false);
     }
 
@@ -57,9 +56,9 @@ public class RevealCardsButton extends Button implements MyComponentsInterface
             @Override
             public void handle(ActionEvent actionEvent)
             {
-                m_counter = 0;
+                m_counter_p1 = 0;
+                m_counter_p2 = 0;
                 ControlFlowContext.getInstance().processState(m_player1_plays, m_player2_plays);
-                //ControlFlow.getInstance().revealAndCalculate(m_player1_plays, m_player2_plays);
                 m_publisher.notifyControllers(Events.REVEAL_CARDS_BUTTON_CLICKED);
             }
         });
@@ -76,5 +75,6 @@ public class RevealCardsButton extends Button implements MyComponentsInterface
     private boolean m_player1_plays = false;
     private boolean m_player2_plays = false;
 
-    private int m_counter = 0;
+    private int m_counter_p1 = 0;
+    private int m_counter_p2 = 0;
 }
