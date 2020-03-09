@@ -3,7 +3,7 @@ package Core.Game.Card;
 public class Card {
     public Card(char suit, int value)
     {
-        m_suit = suit;
+        m_suit = suit; // C D S H
         m_value = value;
     }
 

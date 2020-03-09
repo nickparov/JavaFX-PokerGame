@@ -7,27 +7,29 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class Deck extends ArrayList<Card> {
-  private ArrayList<Character> _Suits = new ArrayList<Character>(Arrays.asList('C', 'D', 'S', 'H'));
-  private ArrayList<Card> _CardDeck;
+  private ArrayList<Character> _suits = new ArrayList<Character>(Arrays.asList('C', 'D', 'S', 'H'));
 
-  Deck() {
-    _CardDeck = new ArrayList<Card>();
+  public Deck() {
     newDeck();
   }
 
   public void newDeck() {
-    _CardDeck.clear(); 
+    this.clear(); 
     // create a new deck of 52 cards
-    for (Character s : _Suits) {
+    for (Character s : _suits) {
       for(int i = 2; i <= 14; i++) {
-        _CardDeck.add(new Card(s, i));
+        this.add(new Card(s, i));
       }
     }
     // sort in random order
-    Collections.shuffle(_CardDeck);
+    Collections.shuffle(this);
+  }
+
+  public Card getTopCard() {
+    return this.remove(this.size() - 1);
   }
 
   public ArrayList<Card> getDeck() {
-    return _CardDeck;
+    return this;
   }
 }

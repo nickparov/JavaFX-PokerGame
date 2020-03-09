@@ -1,6 +1,7 @@
 package Core;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,6 +13,7 @@ public class ThreeCardLogic {
 
     public Map<Character, Integer> SuitMap;
     public ArrayList<Integer>      ValArr;
+    private ArrayList<Character>   _suits = new ArrayList<Character>(Arrays.asList('C', 'D', 'S', 'H'));
 
     public HandInfo() {
       SuitMap  = new HashMap<Character, Integer>();
@@ -21,16 +23,16 @@ public class ThreeCardLogic {
       SuitMap  = new HashMap<Character, Integer>();
       ValArr = new ArrayList<Integer>();
 
-      for(Suits suit : Suits.values()) {
-        SuitMap.put(suit.getCharVal(), 0);
+      for(Character suit : _suits) {
+        SuitMap.put(suit, 0);
       }
       for(int i = 0; i <= 14; i++) {
         ValArr.add(0);
       }
       // count cards of the same suit and corresponding values
-      for(Card CurCard : PassedHand) {
-        SuitMap.put(CurCard.getSuit(),  SuitMap.get(CurCard.getSuit()) + 1);
-        ValArr.set(CurCard.getValue(), ValArr.get(CurCard.getValue()) + 1);
+      for(Card c : PassedHand) {
+        SuitMap.put(c.getSuit(),  SuitMap.get(c.getSuit()) + 1);
+        ValArr.set(c.getValue(), ValArr.get(c.getValue()) + 1);
       }
     }
   }
@@ -58,7 +60,6 @@ public class ThreeCardLogic {
     return false;
   }
 
-
   private static boolean isStraight(HandInfo handInfo) {
 
     if(handInfo.ValArr.get(14) == 1 
@@ -74,14 +75,16 @@ public class ThreeCardLogic {
       curValue = handInfo.ValArr.get(i);
       if(prevValue == curValue && curValue == 1 ) {
         trueComparisons++;
+        if(trueComparisons == 2)
+          return true;
       }
     }
 
-    return trueComparisons == 2 ? true : false;
+    return false;
   }
 
   private static boolean isStraightFlush(HandInfo handInfo) {
-    return isStraight(handInfo) && isThreeOfKind(handInfo) ? true : false;
+    return isStraight(handInfo) && isFlush(handInfo) ? true : false;
   }
 
   public static int getHighCardFromHand(ArrayList<Card> passedHand) {
@@ -117,6 +120,7 @@ public class ThreeCardLogic {
     return 0;
 
   }
+
   public static int evalPPWinnings(ArrayList<Card> Hand, int bet) {
     switch(evalHand(Hand)) {
       case 1:
@@ -134,6 +138,7 @@ public class ThreeCardLogic {
     }
     return bet;
   }
+  
   public static int compareHands(ArrayList<Card> DealerHand, ArrayList<Card> PlayerHand) {
     int dealerPower = evalHand(DealerHand); // 0 - 5
     int playerPower = evalHand(PlayerHand); // 0 - 5

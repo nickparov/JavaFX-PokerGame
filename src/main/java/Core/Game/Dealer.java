@@ -13,11 +13,12 @@ public class Dealer {
 
   public ArrayList<Card> DealHand() {
     CheckDeck();
+
     ArrayList<Card> Hand = new ArrayList<Card>();
 
     // get 3 cards from the deck
     for(int i = 0; i < 3; i++) {
-      Hand.add(_GameDeck.getDeck().remove(_GameDeck.getDeck().size() - 1));
+      Hand.add(_GameDeck.getTopCard());
     }
     // return hand
     return Hand;
@@ -43,5 +44,10 @@ public class Dealer {
 
   public ArrayList<Card> GetHand() {
     return _Hand;
+  }
+
+  // for tests!!!
+  public Deck getDeck() {
+    return _GameDeck;
   }
 }
