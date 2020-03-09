@@ -3,8 +3,6 @@ package game.states;
 import UI.myComponents.MyComponentsManager;
 import game.ControlFlowContext;
 
-import java.awt.*;
-
 public class MakeBetsState extends GameState<Object>
 {
     @Override

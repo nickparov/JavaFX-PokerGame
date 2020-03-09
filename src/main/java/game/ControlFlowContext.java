@@ -6,7 +6,6 @@ import UI.myComponents.MyComponentsManager;
 import game.states.FinishRoundState;
 import game.states.GameState;
 import game.states.MakeBetsState;
-import javafx.scene.layout.HBox;
 
 public class ControlFlowContext
 {
@@ -25,7 +24,9 @@ public class ControlFlowContext
         m_gameState.processState(args);
     }
 
-    public void changeState(GameState newState)
+
+    public <T>
+    void changeState(GameState<T> newState)
     {
         m_gameState = newState;
         m_gameState.startState();

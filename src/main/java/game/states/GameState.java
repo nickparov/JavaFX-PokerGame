@@ -1,7 +1,5 @@
 package game.states;
 
-import game.ControlFlowContext;
-
 abstract public class GameState <T>
 {
     abstract public void processState(T ...args);
