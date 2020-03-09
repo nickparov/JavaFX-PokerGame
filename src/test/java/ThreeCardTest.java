@@ -442,6 +442,15 @@ class ThreeCardTest {
     assertEquals(true, isUnique(deck), "Deck is not Unique!");
   }
 
+  @Tag("DeckClass")
+  @Tag("Uniqueness")
+  @Test
+  void testUniquenessAfternewDeck() {
+    deck.newDeck();
+    deck.newDeck();
+    assertEquals(true, isUnique(deck), "Deck is not unique after newDeck execution!!!");
+  }
+
 
   @Tag("Dealer Class")
   @Tag("Constructor")
